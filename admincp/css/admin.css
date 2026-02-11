@@ -1,0 +1,217 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #e0e7ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/*----admin_menu--------*/
+.admin_menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 15px;
+}
+.icon {
+    margin-right: 10px;
+}
+.admin_menu h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+.admin_menu h1::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #6A0DAD;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.admin_menu li a {
+    display: block;
+    text-decoration: none;
+    font-size: large;
+    transition: color 0.3s, transform 0.3s;
+}
+.admin_menu li a:hover {
+    transform: scale(1.1);
+}
+.admin_menu li {
+    padding: 5px;
+}
+.back{
+    text-align: center;
+}
+.back a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.wrapper{
+    border: 1px none black;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+/*-----------table-----------*/
+table{
+    width: 100%;
+}
+table, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table tr td .input_content{
+    border: 0;
+    width: 99%;
+    outline:none;
+}
+table tr td .input_content:focus{
+    border: 0;
+    box-shadow: 0;
+}
+.input_content{
+    padding: 0;
+}
+/*--------form-container-------*/
+.form-container {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.form-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.form-container th, .form-container td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+.form-container th {
+    background-color: #f2f2f2;
+    font-size: 18px;
+}
+.form-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-container input[type="text"]:focus {
+    border: 1px solid #000000;
+}
+.form-container input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.form-container input[type="submit"]:hover {
+    background-color: transparent; 
+    color: black;
+}
+.form-container input[type="submit"]:active {
+    background-color: black; 
+    color: white;
+}
+/*--------curent-categories---------*/
+.current-categories {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.current-categories table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.current-categories th, .current-categories td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+.current-categories th {
+    background-color: #f2f2f2;
+    font-size: 18px;
+}
+.current-categories a {
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: bold;
+}
+.current-categories a:hover {
+    text-decoration: underline;
+}
+/*---------button----------*/
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button.active {
+    background-color: #007BFF; /* Màu cho nút được chọn */
+    color: white;
+}
+
+.button.inactive {
+    background-color: #CCCCCC; /* Màu cho nút không được chọn */
+    color: #666666;
+}
+/*----------container-number----------*/
+.container_number {
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+.container_number img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.684);
+    transition: all ease-in-out 0.5s;
+}
+.container_number img:hover {
+    width: 25%;
+}
+/*------our-team-----*/
+.our-team {
+    margin-top: 50px; 
+    background-color: white; 
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 30px; 
+}
+/*------------*/
